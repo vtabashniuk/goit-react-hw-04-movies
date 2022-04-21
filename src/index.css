@@ -1,4 +1,9 @@
-@import-normalize; /* bring in normalize.css styles */
+/* @import-normalize; bring in normalize.css styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -7,9 +12,197 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.container > button {
+  position: fixed;
+  top: 80px;
+  left: 50px;
+  background-color: blueviolet;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+}
+
+.homePageTitle {
+  margin: 0 auto;
+  padding-bottom: 20px;
+  width: max-content;
+  font-size: 24px;
+  color: blueviolet;
+}
+
+.movieTitle {
+  margin: 0 auto;
+  padding-bottom: 20px;
+  width: max-content;
+  color: blueviolet;
+}
+
+.movieThumb {
+  display: flex;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+.movieImage {
+  width: max-content;
+  height: max-content;
+}
+
+.movieDescription {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  max-width: 300px;
+  width: fit-content;
+}
+
+.movieDescription > p {
+  margin: 0;
+  width: 100%;
+}
+
+.movieDescription > h3 {
+  margin: 0;
+  padding: 15px 0;
+  font-size: 18px;
+}
+
+.movieOverview {
+  text-align: justify;
+}
+
+.movieAdditionalList {
+  display: flex;
+  justify-content: space-around;
+}
+
+.movieAdditional {
+  display: block;
+  padding: 10px;
+  width: 96px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 1;
+  color: black;
+  text-align: center;
+  cursor: default;
+  border: 2px solid rgba(137, 43, 226, 0.25);
+  border-radius: 5px;
+}
+
+.movieAdditional:hover {
+  background-color: rgba(137, 43, 226, 0.25);
+}
+
+.movieAdditionalActive {
+  color: white;
+  background-color: blueviolet;
+}
+
+.movieAdditionalActive:hover {
+  background-color: blueviolet;
+}
+
+.castAndReviews {
+  padding: 20px;
+  background-color: whitesmoke;
+  border-top: 1px solid blueviolet;
+}
+
+.castAndReviews h2 {
+  margin: 0 auto;
+  padding-bottom: 10px;
+  width: max-content;
+}
+
+.castAndReviews h4 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.reviewList {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewItem:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.reviewInfo {
+  padding: 5px;
+}
+
+.reviewText {
+  margin: 0;
+  padding: 10px;
+  text-align: justify;
+  background-color: white;
+  border: 1px solid rgba(137, 43, 226, 0.25);
+}
+
+.castList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+  width: 100%;
+}
+
+.castItem {
+  padding: 10px;
+  margin: 10px;
+  width: calc((100% - 5 * 20px) / 5);
+  background-color: white;
+  border: 1px solid blueviolet;
+  border-radius: 5px;
+}
+
+.castBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.castBox > img {
+  margin-bottom: 10px;
+}
+
+.castBox > h4 {
+  width: fit-content;
+}
+
+.castBox > p {
+  width: fit-content;
+  margin: 0;
+  font-size: 12px;
 }

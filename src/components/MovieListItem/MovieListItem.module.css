@@ -1,0 +1,15 @@
+.thumb {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  height: max-content;
+  margin: 0 auto;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 2;
+}
