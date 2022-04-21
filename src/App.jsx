@@ -1,8 +1,5 @@
 import { lazy, Suspense } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
-// import HomePage from 'pages/HomePage';
-// import MoviesPage from 'pages/MoviesPage';
-// import MovieDetailsPage from 'pages/MovieDetailsPage';
 import routes from 'routes';
 import Header from './components/Header/index';
 import { css } from '@emotion/react';

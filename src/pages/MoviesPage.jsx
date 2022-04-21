@@ -30,7 +30,7 @@ class MoviesPage extends Component {
 
   queryStringParse = () => {
     const parsingResult = queryString.parse(this.props.location.search);
-    return parsingResult.query;
+    return parsingResult.query.toLowerCase();
   };
 
   searchResultHandling = async () => {
